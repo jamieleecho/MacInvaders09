@@ -10,13 +10,29 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "InvGameScreenController.m"
-            timestampString = "553955398.7484421"
+            timestampString = "553962622.977667"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "188"
             endingLineNumber = "188"
             landmarkName = "-pause"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "soundfx.m"
+            timestampString = "553962622.977772"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "soundOutProc"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

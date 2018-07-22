@@ -55,32 +55,64 @@ OSStatus soundOutProc (AudioDeviceID inDevice, const AudioTimeStamp* inNow, cons
 
 void soundfx_init() {
     OSStatus err = noErr;
-    UInt32 count, bufferSize;
+    UInt32 bufferSize;
     AudioDeviceID device = kAudioDeviceUnknown;
-    AudioStreamBasicDescription format;
-    
+
     // get the default output device for the HAL
-    count = sizeof(AudioDeviceID);
-    err = AudioHardwareGetProperty(kAudioHardwarePropertyDefaultOutputDevice,  &count, (void *) &device);
+    AudioObjectPropertyAddress defaultOutputAddress = {
+        kAudioHardwarePropertyDefaultOutputDevice,
+        kAudioObjectPropertyScopeGlobal,
+        kAudioObjectPropertyElementMaster
+      };
+    UInt32 size = sizeof(AudioDeviceID);
+    err = AudioObjectGetPropertyData(kAudioObjectSystemObject,
+                                     &defaultOutputAddress,
+                                     0,
+                                     NULL,
+                                     &size,
+                                     &device);
     if (err != noErr) return;
-    
+
     // get the buffersize that the default device uses for IO
-    count = sizeof(UInt32);
-    err = AudioDeviceGetProperty(device, 0, false, kAudioDevicePropertyBufferSize, &count, &bufferSize);
+    AudioObjectPropertyAddress bufferSizeAddress = {
+     kAudioDevicePropertyBufferSize,
+     kAudioDevicePropertyScopeOutput,
+     0
+    };
+    err = AudioObjectGetPropertyData(device,
+                                     &bufferSizeAddress,
+                                     0,
+                                     NULL,
+                                     &size,
+                                     &bufferSize);
+
     if (err != noErr) return;
-   
-    // get a description of the data format used by the default device
-    count = sizeof(AudioStreamBasicDescription);
-    err = AudioDeviceGetProperty(device, 0, false, kAudioDevicePropertyStreamFormat, &count, &format);
+
+  // get a description of the data format used by the default device
+    AudioStreamBasicDescription format;
+    size = sizeof(AudioStreamBasicDescription);
+    AudioObjectPropertyAddress formatDescriptionAddress = {
+      kAudioDevicePropertyStreamFormat,
+      kAudioDevicePropertyScopeOutput,
+      0
+    };
+    err = AudioObjectGetPropertyData(device,
+                                     &formatDescriptionAddress,
+                                     0,
+                                     NULL,
+                                     &size,
+                                     &format);
     if (err != noErr) return;
     
     // we want linear pcm
     assert(format.mFormatID == kAudioFormatLinearPCM);
 
-    err = AudioDeviceAddIOProc(device, soundOutProc, NULL);
-    if(err != noErr) return;
-    err = AudioDeviceStart(device, soundOutProc);			
-    if(err != noErr) return;
+    //  register the IOProc
+    AudioDeviceIOProcID procID = NULL;
+    err = AudioDeviceCreateIOProcID(device, soundOutProc, NULL, &procID);
+    if (err != noErr) return;
+    err = AudioDeviceStart(device, procID);
+    if (err != noErr) return;
 }
 
 /* Loads sound data from the file specified by filename. If
