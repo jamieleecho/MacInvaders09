@@ -47,8 +47,6 @@
     leftPressed = rightPressed = spacePressed = NO;
     if (![[super window] setFrameUsingName:@"Invaders 09"])
 		[[super window] center];
-	  if ([super.window respondsToSelector:@selector(setPreferredBackingLocation:)])
-		  [super.window setPreferredBackingLocation:NSWindowBackingLocationVideoMemory];
     myImageView.wantsLayer = YES;
   
     return self;
