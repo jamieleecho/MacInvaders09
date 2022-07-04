@@ -1,4 +1,4 @@
-#define MACINVADERS09_VERSION "1.0.0->1"
+#define MACINVADERS09_VERSION "1.0.5"
 
 #include <stdio.h>
 #include <string.h>
