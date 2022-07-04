@@ -45,7 +45,7 @@
     [myImage addRepresentation: myImageRep];
 
     leftPressed = rightPressed = spacePressed = NO;
-    if (![[super window] setFrameUsingName:@"Invaders 09"])
+    if (![[super window] setFrameUsingName:@"MacInvaders09"])
 		[[super window] center];
     myImageView.wantsLayer = YES;
   
@@ -179,8 +179,8 @@
   gameIsPaused = YES;
   NSAlert *alert = [[[NSAlert alloc] init] autorelease];
   alert.alertStyle = NSAlertStyleWarning;
-  alert.messageText = @"Invaders 09 Paused";
-  alert.informativeText = @"Invaders 09 is paused. Press the \"Resume\" button to resume play or the \"Abort\" button to abort the current game and return to the main menu.";
+  alert.messageText = @"MacInvaders09 Paused";
+  alert.informativeText = @"MacInvaders09 is paused. Press the \"Resume\" button to resume play or the \"Abort\" button to abort the current game and return to the main menu.";
   [alert addButtonWithTitle:@"Resume"];
   [alert addButtonWithTitle:@"Abort"];
   [alert beginSheetModalForWindow:self.window completionHandler:^(NSModalResponse returnCode) {
@@ -210,13 +210,13 @@
 
     NSAlert *alert = [[[NSAlert alloc] init] autorelease];
     alert.alertStyle = NSAlertStyleWarning;
-    alert.messageText = @"Quit Invaders 09";
-    alert.informativeText = @"Are you sure that you want to quit Invaders 09?";
+    alert.messageText = @"Quit MacInvaders09";
+    alert.informativeText = @"Are you sure that you want to quit MacInvaders09?";
     [alert addButtonWithTitle:@"Resume"];
     [alert addButtonWithTitle:@"Quit"];
     [alert beginSheetModalForWindow:self.window completionHandler:^(NSModalResponse returnCode) {
       if (returnCode == NSAlertSecondButtonReturn) { // quit game
-        [self.window saveFrameUsingName:@"Invaders 09"];
+        [self.window saveFrameUsingName:@"MacInvaders09"];
         exit(0);
       }
       gameIsPaused = NO;

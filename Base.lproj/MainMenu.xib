@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment version="101000" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <menu title="AMainMenu" systemMenu="main" id="29" userLabel="MainMenu">
+            <items>
+                <menuItem title="MacInvaders09" id="56">
+                    <menu key="submenu" title="MacInvaders09" systemMenu="apple" id="57">
+                        <items>
+                            <menuItem title="About MacInvaders09" id="58">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="236">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Quit MacInvaders09" keyEquivalent="q" id="136">
+                                <connections>
+                                    <action selector="terminate:" target="-1" id="371"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Game" id="374">
+                    <menu key="submenu" title="Game" id="375">
+                        <items>
+                            <menuItem title="Normal Size" keyEquivalent="1" id="378">
+                                <connections>
+                                    <action selector="normalSize:" target="373" id="386"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Double Size" keyEquivalent="2" id="376">
+                                <connections>
+                                    <action selector="doubleSize:" target="373" id="387"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Zoom" keyEquivalent="3" id="377">
+                                <connections>
+                                    <action selector="performZoom:" target="373" id="388"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Window" id="379">
+                    <menu key="submenu" title="Window" systemMenu="window" id="380">
+                        <items>
+                            <menuItem title="Close Window" keyEquivalent="w" id="382">
+                                <connections>
+                                    <action selector="performClose:" target="-1" id="389"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Zoom Window" id="381">
+                                <connections>
+                                    <action selector="performZoom:" target="-1" id="390"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Minimize Window" keyEquivalent="m" id="384">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="391"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="383">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Bring All to Front" id="385">
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="393"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="-49" y="77"/>
+        </menu>
+        <customObject id="373" userLabel="Inv Run Game" customClass="InvRunGame"/>
+    </objects>
+</document>

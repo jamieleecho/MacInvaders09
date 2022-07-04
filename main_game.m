@@ -223,7 +223,7 @@ static void main_game_draw_title()
   
   /* Print the text here. */
   game_screen_color(g, 0, 3);
-  game_screen_print(g, 8, 1,   "/) Invaders 09  V1.05 (\\");
+  game_screen_print(g, 7, 1,   "/) MacInvaders09  V1.05 (\\");
   game_screen_color(g, 0, 2);
   game_screen_print(g, 10, 2,  "The Invasion Begins!");
   game_screen_color(g, 0, 3);

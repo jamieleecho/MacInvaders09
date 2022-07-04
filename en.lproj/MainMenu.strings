@@ -1,0 +1,48 @@
+
+/* Class = "NSMenu"; title = "AMainMenu"; ObjectID = "29"; */
+"29.title" = "AMainMenu";
+
+/* Class = "NSMenuItem"; title = "MacInvaders09"; ObjectID = "56"; */
+"56.title" = "MacInvaders09";
+
+/* Class = "NSMenu"; title = "MacInvaders09"; ObjectID = "57"; */
+"57.title" = "MacInvaders09";
+
+/* Class = "NSMenuItem"; title = "About MacInvaders09"; ObjectID = "58"; */
+"58.title" = "About MacInvaders09";
+
+/* Class = "NSMenuItem"; title = "Quit MacInvaders09"; ObjectID = "136"; */
+"136.title" = "Quit MacInvaders09";
+
+/* Class = "NSMenuItem"; title = "Game"; ObjectID = "374"; */
+"374.title" = "Game";
+
+/* Class = "NSMenu"; title = "Game"; ObjectID = "375"; */
+"375.title" = "Game";
+
+/* Class = "NSMenuItem"; title = "Double Size"; ObjectID = "376"; */
+"376.title" = "Double Size";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "377"; */
+"377.title" = "Zoom";
+
+/* Class = "NSMenuItem"; title = "Normal Size"; ObjectID = "378"; */
+"378.title" = "Normal Size";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "379"; */
+"379.title" = "Window";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "380"; */
+"380.title" = "Window";
+
+/* Class = "NSMenuItem"; title = "Zoom Window"; ObjectID = "381"; */
+"381.title" = "Zoom Window";
+
+/* Class = "NSMenuItem"; title = "Close Window"; ObjectID = "382"; */
+"382.title" = "Close Window";
+
+/* Class = "NSMenuItem"; title = "Minimize Window"; ObjectID = "384"; */
+"384.title" = "Minimize Window";
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "385"; */
+"385.title" = "Bring All to Front";

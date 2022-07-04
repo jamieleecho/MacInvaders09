@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5206BC4A0D30DE15001ABAA2 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 5206BC480D30DE15001ABAA2 /* MainMenu.nib */; };
 		5212AE0F0CE75B3D00452AAC /* InvRunGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5212AE0C0CE75B3D00452AAC /* InvRunGame.m */; };
 		5212AE100CE75B3D00452AAC /* InvGameScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5212AE0E0CE75B3D00452AAC /* InvGameScreenController.m */; };
 		5212AE5C0CE75D2500452AAC /* game_screen.m in Sources */ = {isa = PBXBuildFile; fileRef = 5212AE570CE75D2500452AAC /* game_screen.m */; };
@@ -23,7 +22,6 @@
 		5212AF510CE75F6E00452AAC /* shield.m in Sources */ = {isa = PBXBuildFile; fileRef = 5212AE1D0CE75B4C00452AAC /* shield.m */; };
 		5212AF520CE75F6E00452AAC /* ship.m in Sources */ = {isa = PBXBuildFile; fileRef = 5212AE1F0CE75B4C00452AAC /* ship.m */; };
 		5212AF530CE75F6F00452AAC /* ufo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5212AE220CE75B4C00452AAC /* ufo.m */; };
-		5212AF880CE760DF00452AAC /* MacInvaders09.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5212AF7C0CE760DE00452AAC /* MacInvaders09.icns */; };
 		5212AF890CE760DF00452AAC /* uexpl.iff in Resources */ = {isa = PBXBuildFile; fileRef = 5212AF7D0CE760DE00452AAC /* uexpl.iff */; };
 		5212AF8A0CE760DF00452AAC /* expl.iff in Resources */ = {isa = PBXBuildFile; fileRef = 5212AF7E0CE760DE00452AAC /* expl.iff */; };
 		5212AF8B0CE760DF00452AAC /* go.iff in Resources */ = {isa = PBXBuildFile; fileRef = 5212AF7F0CE760DE00452AAC /* go.iff */; };
@@ -36,6 +34,8 @@
 		5212AF920CE760DF00452AAC /* wohoo.iff in Resources */ = {isa = PBXBuildFile; fileRef = 5212AF860CE760DF00452AAC /* wohoo.iff */; };
 		5212AF930CE760DF00452AAC /* ship in Resources */ = {isa = PBXBuildFile; fileRef = 5212AF870CE760DF00452AAC /* ship */; };
 		5212AFA30CE761B700452AAC /* InvGameScreen.nib in Resources */ = {isa = PBXBuildFile; fileRef = 5212AFA10CE761B700452AAC /* InvGameScreen.nib */; };
+		52AE0A4228733B6800866402 /* MacInvaders09.icns in Resources */ = {isa = PBXBuildFile; fileRef = 52AE0A4128733B6800866402 /* MacInvaders09.icns */; };
+		52AE0A4628733D3E00866402 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AE0A4428733D3E00866402 /* MainMenu.xib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -78,7 +78,6 @@
 		5212AE5A0CE75D2500452AAC /* myrand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myrand.m; sourceTree = "<group>"; };
 		5212AE5B0CE75D2500452AAC /* myrand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myrand.h; sourceTree = "<group>"; };
 		5212AF2F0CE75DBF00452AAC /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = /System/Library/Frameworks/CoreAudio.framework; sourceTree = "<absolute>"; };
-		5212AF7C0CE760DE00452AAC /* MacInvaders09.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = MacInvaders09.icns; sourceTree = "<group>"; };
 		5212AF7D0CE760DE00452AAC /* uexpl.iff */ = {isa = PBXFileReference; lastKnownFileType = file; path = uexpl.iff; sourceTree = "<group>"; };
 		5212AF7E0CE760DE00452AAC /* expl.iff */ = {isa = PBXFileReference; lastKnownFileType = file; path = expl.iff; sourceTree = "<group>"; };
 		5212AF7F0CE760DE00452AAC /* go.iff */ = {isa = PBXFileReference; lastKnownFileType = file; path = go.iff; sourceTree = "<group>"; };
@@ -91,10 +90,11 @@
 		5212AF860CE760DF00452AAC /* wohoo.iff */ = {isa = PBXFileReference; lastKnownFileType = file; path = wohoo.iff; sourceTree = "<group>"; };
 		5212AF870CE760DF00452AAC /* ship */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ship; sourceTree = "<group>"; };
 		52A7E94B23B6AABD002F3F95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		52A7E94E23B6AAC0002F3F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Base; path = Base.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		52A7E94F23B6AAC0002F3F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Base; path = Base.lproj/InvGameScreen.nib; sourceTree = "<group>"; };
+		52AE0A4128733B6800866402 /* MacInvaders09.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = MacInvaders09.icns; sourceTree = "<group>"; };
+		52AE0A4528733D3E00866402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* Invaders 09.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Invaders 09.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107320486CEB800E47090 /* MacInvaders09.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacInvaders09.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +143,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107320486CEB800E47090 /* Invaders 09.app */,
+				8D1107320486CEB800E47090 /* MacInvaders09.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,8 +197,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5206BC480D30DE15001ABAA2 /* MainMenu.nib */,
-				5212AF7C0CE760DE00452AAC /* MacInvaders09.icns */,
+				52AE0A4428733D3E00866402 /* MainMenu.xib */,
+				52AE0A4128733B6800866402 /* MacInvaders09.icns */,
 				5212AF7D0CE760DE00452AAC /* uexpl.iff */,
 				5212AF7E0CE760DE00452AAC /* expl.iff */,
 				5212AF7F0CE760DE00452AAC /* go.iff */,
@@ -244,7 +244,7 @@
 			name = MacInvaders09;
 			productInstallPath = "$(HOME)/Applications";
 			productName = Invaders;
-			productReference = 8D1107320486CEB800E47090 /* Invaders 09.app */;
+			productReference = 8D1107320486CEB800E47090 /* MacInvaders09.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -253,7 +253,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1320;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MacInvaders09" */;
 			compatibilityVersion = "Xcode 3.0";
@@ -278,8 +278,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
-				5212AF880CE760DF00452AAC /* MacInvaders09.icns in Resources */,
 				5212AF890CE760DF00452AAC /* uexpl.iff in Resources */,
+				52AE0A4228733B6800866402 /* MacInvaders09.icns in Resources */,
 				5212AF8A0CE760DF00452AAC /* expl.iff in Resources */,
 				5212AF8B0CE760DF00452AAC /* go.iff in Resources */,
 				5212AF8C0CE760DF00452AAC /* rdrip.iff in Resources */,
@@ -288,10 +288,10 @@
 				5212AF8F0CE760DF00452AAC /* shield in Resources */,
 				5212AF900CE760DF00452AAC /* sm.iff in Resources */,
 				5212AF910CE760DF00452AAC /* ufo in Resources */,
+				52AE0A4628733D3E00866402 /* MainMenu.xib in Resources */,
 				5212AF920CE760DF00452AAC /* wohoo.iff in Resources */,
 				5212AF930CE760DF00452AAC /* ship in Resources */,
 				5212AFA30CE761B700452AAC /* InvGameScreen.nib in Resources */,
-				5206BC4A0D30DE15001ABAA2 /* MainMenu.nib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,20 +331,20 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		5206BC480D30DE15001ABAA2 /* MainMenu.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52A7E94E23B6AAC0002F3F95 /* Base */,
-			);
-			name = MainMenu.nib;
-			sourceTree = "<group>";
-		};
 		5212AFA10CE761B700452AAC /* InvGameScreen.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				52A7E94F23B6AAC0002F3F95 /* Base */,
 			);
 			name = InvGameScreen.nib;
+			sourceTree = "<group>";
+		};
+		52AE0A4428733D3E00866402 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52AE0A4528733D3E00866402 /* Base */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -365,7 +365,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_BUNDLE_IDENTIFIER = com.subetha.Invaders09;
-				PRODUCT_NAME = "Invaders 09";
+				PRODUCT_NAME = MacInvaders09;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
@@ -385,7 +385,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_BUNDLE_IDENTIFIER = com.subetha.Invaders09;
-				PRODUCT_NAME = "Invaders 09";
+				PRODUCT_NAME = MacInvaders09;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
@@ -407,6 +407,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -422,7 +423,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
@@ -446,6 +447,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -459,7 +461,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
 				USE_HEADERMAP = NO;

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Invaders 09.xcodeproj">
+      location = "self:/Users/jcho/src/jamieleecho/MacInvaders09/MacInvaders09.xcodeproj">
    </FileRef>
 </Workspace>
