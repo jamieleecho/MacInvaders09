@@ -1,0 +1,17 @@
+name: Build
+
+on:
+  - push
+
+jobs:
+  build-and-test-macos:
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Build and test macOS application
+        env:
+          DEVELOPER_DIR: /Applications/Xcode_11.7.app/Contents/Developer
+        run: |
+          sudo xcode-select -switch /Applications/Xcode_11.7.app
+          xcodebuild -project Space\ Bandits/Space\ Bandits.xcodeproj -scheme "Invaders09" build CONFIGURATION_BUILD_DIR=`pwd`/build

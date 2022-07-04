@@ -1,0 +1,19 @@
+{
+  "scheme": "custom",
+  "schemeDefinition": "major.minor[.build][->patch]",
+  "versionFile": "./package.json",
+  "files": [{
+    "path": "./Info.plist",
+    "line": 22
+  }, {
+    "path": "./main_game.m",
+    "line": 1
+  }],
+  "rules": [{
+      "trigger": "manual",
+      "bump": "patch",
+      "branch": "main",
+      "reset": "build",
+      "tag": true
+  }]
+}

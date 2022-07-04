@@ -1,3 +1,5 @@
+#define MACINVADERS09_VERSION "1.0.5"
+
 #include <stdio.h>
 #include <string.h>
 #include <assert.h>
@@ -223,7 +225,7 @@ static void main_game_draw_title()
   
   /* Print the text here. */
   game_screen_color(g, 0, 3);
-  game_screen_print(g, 7, 1,   "/) MacInvaders09  V1.05 (\\");
+  game_screen_print(g, 7, 1,   "/) MacInvaders09 V" MACINVADERS09_VERSION " (\\");
   game_screen_color(g, 0, 2);
   game_screen_print(g, 10, 2,  "The Invasion Begins!");
   game_screen_color(g, 0, 3);
