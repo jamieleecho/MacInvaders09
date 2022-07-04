@@ -1,0 +1,8 @@
+*~
+*.bak
+*.swp
+
+*.pyc
+.DS_Store
+
+*.xcodeproj/project.xcworkspace/xcuserdata

@@ -332,7 +332,7 @@ int bitmap_block_collision(bitmap b, int x2, int y2, int x0, int y0, int xlen, i
   	/* old_ptr = pixel_ptr; */
   	/* printf("\n"); */
   	for (ii=start_x; ii <= end_x; ii++) {
-      if ((int)(b->bitmap + (b->x * b->y)) <= (int)(pixel_ptr) ) {
+      if ((char *)(b->bitmap + (b->x * b->y)) <= (pixel_ptr) ) {
       	pixel_ptr++;
       	/* printf("X"); */
       }
