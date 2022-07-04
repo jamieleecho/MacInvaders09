@@ -1,6 +1,6 @@
 {
   "scheme": "custom",
-  "schemeDefinition": "major.minor[.build][->patch]",
+  "schemeDefinition": "major.minor.patch",
   "versionFile": "./package.json",
   "files": [{
     "path": "./Info.plist",
